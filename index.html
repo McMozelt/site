@@ -12,5 +12,7 @@
 </html>
 <script>
 	let params = new URLSearchParams(location.search);
-	if (params.has("uid")) document.getElementById("uid").innerHTML = "Your ID is " + location.hash;
+	if (params.has("uid")) {
+		document.getElementById("uid").innerHTML = "Your ID is " + params.get("uid");
+	}
 </script>
